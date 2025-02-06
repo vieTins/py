@@ -12,10 +12,12 @@ a = list(map(newPow , a)) # áp dụng cho toàn bộ
 def add (a,b) : 
     return a + b
 def prime (n) :
+    if n < 2 :
+        return False
     for i in range(2 , math.isqrt(n) + 1):
         if n % i == 0 :
             return False 
-        return n > 1 
+    return True 
 if __name__ == "__main__" : 
     a = [1,2,3,4] 
     b = [4,5,6,7] 
@@ -26,7 +28,8 @@ if __name__ == "__main__" :
 
 # filter() được sử dụng để trích xuất các phần tử trong một iterable khi apply một hàm nào đó 
 # với phần tử đó mà hàm trả về giá trị là True 
-    e = list(filter(prime , a))
+
+    e = list(filter(prime , a)) # lọc ra các số nguyên tố từ a
 # Dùng List_Comprehension
     f = [x for x in a if prime(x)]
 # Áp dụng filter với lambda 

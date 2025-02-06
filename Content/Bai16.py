@@ -1,10 +1,10 @@
 # Tuple là một collection có thứ tự trong python 
-# Các phần tử có  thứ tự 
+# Các phần tử có  thứ tự và không thể thay đổi 
 # không thể thay đổi , tức là không thể thêm xóa sửa
 # Tạo tuple phải đưa các phần tử vào trong đóng mở ngoặc tròn 
 a = (1,2,3) 
 b = (1,)  # chỉ có một phần tử thì phải có dấu phẩy 
-# tạo tuple thông qua constructor tuple () 
+# tạo tuple thông qua constructor tuple () - ép kiểu 
 c = tuple([1,2,3])
 print(c)
 # giống như list nhưng không thể thay đổi được 
@@ -15,8 +15,9 @@ print(a)
 
 # Sắp xếp tuple 
 #  Cách 1 :  Sử dụng hàm sorted sau đó convert ngược lại tuple 
-e = (9,5,7,3,0,2) 
-e = tuple(sorted(e)) 
+e = (9,5,7,3,0, 2 , 3) 
+e = tuple(sorted(e))
+# hàm sorted trả về một list các phần tử đã được sắp xếp nên phải ép kiểu lại thành tuple
 print(e)
 
 # Count và index 
