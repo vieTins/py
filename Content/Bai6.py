@@ -41,7 +41,8 @@ str1 = "length"
 str2 = 'nguyenviettin'
 
 # truy xuất từng ký tự trong một chuỗi theo hình thức index  str[1]
-# dùng 3 dấu phẩy để khai báo trên nhìu dòng 
+# dùng 3 dấu phẩy để khai báo trên nhìu dòng
+
 # Trích xuất chuỗi con [start:end]
 
 print (str1[0:4],end="\n") 
@@ -56,8 +57,8 @@ print("chuoi moi la str2 " , str2New , end="\n")
 
 # tìm chuỗi con 
 str3 = "Hello World" 
-print (str3.find("World" , 0 , 5)) 
-# rfind
+print (str3.find("World" , 0 , 5)) # tìm chuỗi con từ vị trí 0 đến 5
+# rfind tìm từ phải qua trái
 
 # tách chuỗi
 print (str3.split(' '))

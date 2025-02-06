@@ -3,13 +3,16 @@
 # kết hợp đkien và vòng lặp đê rút gọn cú pháp 
 # cú pháp 
 # [Expression for var in iterable]
+# Expression là biểu thức được thực hiện khi mỗi vòng lặp thực thi 
+# var là biến lặp qua từng phần tử trong iterable
+# iterable là ctdl như list , tuple , set , dict 
 a = [1,2,3,4]
 b = [x + 3 for x in a]
 print(b)
 c = [x **3 for x in range(1,11)]
 print(c)
 # có thể kết kết hợp với md if 
-d = [x **3 for x in range(1,11) if x > 4]
+d = [x ** 3 for x in range(1,11) if x > 4]
 print(d)
 
 # khi sử dụng các hàm có sẵn thì sử dụng map sẽ nhanh gọn hơn so với list_comp 

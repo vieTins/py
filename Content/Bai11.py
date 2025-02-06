@@ -36,10 +36,16 @@ myList.pop(2)
 # hàm del cũng như pop nhưng không trả về pt bị xóa 
 
 # hàm remove thì xóa theo giá trị truyền vào -> nếu có nhiều giá trị giống nhau thì xóa đi phần tử đầu tiên 
+myList.remove(1) 
 # nếu không có thì dùng remove sẽ báo lỗi 
 # hàm clear xóa hết 
 
 # sao chép list 
+a = [1 , 2 , 3 ,4] 
+b = a  
+print (id(a) , id(b)) # cùng một địa chỉ
+# khi ta thay đổi b thì a cũng thay đổi
+# dùng hàm copy để sao chép list thì id sẽ khác nhau
 # giúp nhân bản nội dung của list ban đầu 
 myCopyList = myList *2 
 for item in myCopyList :
@@ -50,3 +56,5 @@ zeroList = [0] * 1000
 # Combine List - Nối list   
 myList.extend(myCopyList) 
 myList+=myCopyList 
+
+
