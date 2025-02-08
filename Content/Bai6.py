@@ -53,7 +53,8 @@ print(count , end="\n")
 
 # tìm và thay thế nỗi dung 
 str2New = str2.replace("ng" , "NG");
-print("chuoi moi la str2 " , str2New , end="\n")
+print("chuoi moi la str2 " , str2New , end="\n") 
+# Các hàm xử lý của str không thay đổi chính nó mà trả về một chuỗi mới
 
 # tìm chuỗi con 
 str3 = "Hello World" 
@@ -73,3 +74,7 @@ print(x)
 # loại bỏ các ký tự (mặc định là lý tự khoảng trắng) trước và sau 
 newStr = "/nguyenviettin/" 
 print(newStr.strip("/"))
+
+# hàm chr và ord
+# hàm chr chuyển mã ascii sang ký tự
+# hàm ord chuyển ký tự sang mã ascii
